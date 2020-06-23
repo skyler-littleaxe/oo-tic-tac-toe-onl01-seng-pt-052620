@@ -70,6 +70,6 @@ class TicTacToe
     WIN_COMBINATIONS.find do |win_combo|
       position_1_index = win_combo[0]
       position_1_index = win_combo[0]
-
+      
 
 end
