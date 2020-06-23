@@ -14,15 +14,15 @@ class TicTacToe
   def initialize 
     @board = []
     i = 0
-    while i < 9
-    @board[i] = " "
-    i += 1
-    end
+      while i < 9
+        @board[i] = " "
+        i += 1
+      end
     @board = Array.new(9, " ")
   end
   
   def display_board
-     puts (" #{board[0]} | #{board[1]} | #{board[2]} ")
+    puts (" #{board[0]} | #{board[1]} | #{board[2]} ")
     puts ("-----------")
     puts (" #{board[3]} | #{board[4]} | #{board[5]} ")
     puts ("-----------")
@@ -30,7 +30,7 @@ class TicTacToe
   end
   
   def input_to_index(input)
-    @indez - input.to_i - 1
+    @index - input.to_i - 1
   end
   
   def move(index, token)
@@ -46,7 +46,7 @@ class TicTacToe
   end
   
   def valid_move
-    !position_taken(index) && indez.between?(0,8)
+    !position_taken(index) && index.between?(0,8)
   end
   
   def current_player
