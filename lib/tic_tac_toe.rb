@@ -65,6 +65,10 @@ class TicTacToe
       turn
     end
   end
+  
+  def won?
+    WIN_COMBINATIONS.find do |win_combo|
+      position_1_index = win_combo[0]
 
 
 
