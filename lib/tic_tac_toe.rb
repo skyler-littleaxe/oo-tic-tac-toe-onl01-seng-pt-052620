@@ -73,5 +73,6 @@ class TicTacToe
       position_3_index = win_combo[3]
       
       position_1_token = board[position_1_index]
-
+      position_2_token = board[position_2_index]
+      
 end
