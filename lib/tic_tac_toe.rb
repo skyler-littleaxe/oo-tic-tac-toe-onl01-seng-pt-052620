@@ -69,7 +69,9 @@ class TicTacToe
   def won?
     WIN_COMBINATIONS.find do |win_combo|
       position_1_index = win_combo[0]
-      position_1_index = win_combo[0]
+      position_2_index = win_combo[1]
+      position_3_index = win_combo[3]
       
+      position_1_token = board[position_1_index]
 
 end
